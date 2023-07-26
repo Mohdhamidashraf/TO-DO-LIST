@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    background-color:rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    min-width: 400px;
+}
+.cointaner{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 15px;
+   background-color: #1e3be9;
+    box-shadow: 0 0 4px 3px yellow ;
+}
+
+h1{
+    text-align: center;
+    color: yellow;
+}
+.description{
+    position: relative;
+    top:-20px;
+    width: 100%;
+    height: 5%;
+    text-align: start;
+    padding: 0px;
+    padding-left: 20px;
+    color: black;
+
+}
+.description > h3{
+    height: 0%;
+    padding-top: 3px;
+}
+.description > input{
+    height: 100%;
+    width: 95%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+.catagory-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    text-align: start;
+     font-weight: bold;
+     font-family: sans-serif;
+    
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.category > select{
+    width: 90%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-left: -5px;
+    margin-top: 3px;
+
+}
+option{
+    background-color: #8a2be2;
+    color: white;
+}
+.list-description{
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 48%;
+    text-align: start;
+}
+
+.date > input{
+    width: 90%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    height: 30px;
+    text-transform: uppercase;
+}
+.add-button > button{
+    background-color: black;
+    width: 150px;
+    color: white;
+    padding: 15px;
+    border-radius: 10px
+}
+.delete-button > button{
+    background-color: red;
+    color: white;
+    border: none;
+     width: 150px;
+    padding: 15px;
+    border-radius: 10px
+
+}
+
+#check{
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    background-color: #1e3be9;
+    margin-right:  5px;
+}
+
+
+ul{
+    list-style: none;  
+}
+.date_1{
+    margin-top: 5px;
+}
+li{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    justify-items: center;
+    flex-direction: row;
+}
+.catagory-type{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -40px;
+
+}
+.catagory-type input:checked + .catagory-item > label {
+    text-decoration: line-through;
+    color: red;
+}
+.catagory-item{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.list-catagory{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    color: white;
+}
+.School{
+    background-color: orange ;
+    font-weight: bold;
+}
+.Work{
+    background-color:rgb(146, 0, 134);
+    font-weight: bold;
+}
+.Personal{
+    background-color: rgb(1, 1, 105);
+    font-weight: bold;
+}
+.Cleaning{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.Others{
+    background-color:maroon;
+    font-weight: bold;
+}
+@media only screen and (max-width: 800px) {
+    .cointaner{
+        width: 80%;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .cointaner{
+        width: 90%;
+    }
+  }
+@media only screen and (max-width: 400px) {
+    .cointaner{
+        width: 100%;
+    }
+  }
